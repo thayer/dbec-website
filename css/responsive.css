@@ -1,0 +1,309 @@
+/*------------------------------------------------------------
+
+Thayer School of Engineering at Dartmouth
+
+version:	1.0
+author:		Alison Findon
+email:		alison.findon@dartmouth.edu
+website:	http://engineering.dartmouth.edu
+
+------------------------------------------------------------*/
+
+a.menu-link, 
+a.menu-link:link, 
+a.menu-link:visited {
+	display:none;
+}
+#mobile-header {
+	display:none;
+}
+#headercontainer {
+	width:100%; 
+	background-color: #002653;
+	border-bottom:1px solid #fff;
+}
+#header {
+	max-width: 1010px; 
+	margin:0 auto;
+	border-bottom:none;
+}
+#outercontainer {
+	width:100%;
+	border-top: 3px solid #017443;
+}
+#mastercontainer {
+	max-width: 1010px; 
+	margin:0 auto;
+	width:100%;
+	border-top:none;
+}
+#content_positioning {
+	min-width:0;
+}
+#content {
+	width:100%;
+}
+h1 {
+	line-height: 1.2em;
+}
+.float-image-left {
+	float:left;
+	padding: 0.5em 0.8em 0.5em 0;
+	position: relative;
+}
+.float-image-right {
+	float:right;
+	padding: 0.5em 0 0.5em 0.8em;
+	position: relative;
+}
+.portrait-photo {
+	float:left;
+	padding: 0.5em 0.8em 0.5em 0;
+	position: relative;	
+}
+.education-list {
+	margin-left: 12px;
+}
+#footercontainer {
+	width:auto;
+	border-top: 1px solid #017443;
+	padding-left:10px; 
+	padding-right:10px;
+}
+#footer {
+	max-width: 1010px; 
+	margin:0 auto;
+	border-top:none;
+}
+
+
+
+
+@media screen and (max-width:1005px) { /* 940 + 65 */
+	img {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+/* 
+	td img {
+		width:100% !important;
+		height:auto !important;
+	}
+ */
+	#content_positioning {
+		padding-right:15px;
+	}
+	#content .caption, 
+	#content .img-w-caption {
+		max-width:50%;
+	}
+	#content .home-caption {
+		max-width:100%;
+	}
+} /* end max-width:1005px */
+
+
+
+@media screen and (max-width:875px) {
+	table.datatable {
+		font-size:0.9em;
+	}
+	table.datatable td, 
+	table.datatable th {
+		padding:10px 5px;
+	}
+	table.datatable th {
+		font-size: 1em;
+	}
+	.float-image-left, 
+	.float-image-right {
+		max-width: 50%;
+	}
+	table.retrieval-program, 
+	table.retrieval-program thead, 
+	table.retrieval-program tbody, 
+	table.retrieval-program th, 
+	table.retrieval-program td, 
+	table.retrieval-program tr { 
+		display: block; 
+	}
+	#content table.retrieval-program td {
+		width: 100%;
+		padding-left:0;
+		padding-right:0;
+	}
+	#content .twocolumn_right {
+		border-left:none;
+		margin-top: 25px;
+	}
+}/* end max-width:875px */
+
+
+@media screen and (max-width:775px) {
+	.float-image-left, 
+	.float-image-right {
+		float: none;
+		display:block;
+		padding-left:0;
+		padding-right:0;
+		max-width: 100%;
+	}
+}
+
+
+@media screen and (max-width:638px) {
+	#header {
+		height:auto;
+		padding-top:0;
+		padding-bottom:0;
+		background-image:none;
+	}
+	#header #utilitynav {
+		background-color:#017443; 
+		margin-left:0;
+	}
+	#header #utilitynav #stripe {
+		background-image:none;
+		text-align:left;
+		padding-left:5px;
+	}
+	#mastercontainer {
+		margin-top:0;
+		padding-top:10px;
+		margin-bottom:20px;
+	}
+	#mobile-header {
+		display:block;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-size:18px;
+		color: #fff;
+		margin:0 5px 10px 5px;
+	}
+	#mobile-header a, 
+	#mobile-header a:link,
+	#mobile-header a:visited {
+		color: #fff;
+		text-decoration:none;
+	}
+    a.menu-link, 
+    a.menu-link:link, 
+    a.menu-link:visited {
+		display: block;
+		padding: 0.3em 0;
+		background-color: #017443;
+		padding-left: 2%;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+	a.menu-link:hover {
+		text-decoration:none;
+	}
+	a.menu-link span{
+		background: url("../images/down-arrow.png") no-repeat scroll right center transparent;
+		cursor: pointer;
+		padding-right: 18px;
+	}
+	a.active span{
+		background: url("../images/up-arrow.png") no-repeat scroll right center transparent;
+		cursor: pointer;
+		padding-right: 18px;
+	}
+	div#menu-mobile{
+		clear: both;
+		-webkit-transition: all 0.3s ease-out;  
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+	.js div#menu-mobile {
+		overflow: hidden;
+		max-height: 0; 
+	}
+	div#menu-mobile.active {
+		max-height: 105em; 
+	}
+	#navigation{
+		float:none;
+		width:100%;
+	}
+	#navigation li, 
+	#navigation a {
+		width:100%;
+	}
+	#navigation li.subnav {
+		width:100%;
+	}
+	#navigation li.subnav a, 
+	#navigation #related li a {
+		width:auto;
+	}
+	#content_positioning{
+		margin-left:0; 
+		min-width:100%;
+		max-width:100%;
+		padding-right:0;
+	}
+	#content {
+		float:none;
+		padding-left:5px;
+		padding-right:5px;
+		width:auto;
+	}
+	h1 {
+		border:none;
+		color: #002653; 
+		line-height: 1.3em;
+		margin-top:20px !important;
+		font-size: 2em;
+	}
+	table, 
+	thead, 
+	tbody, 
+	th, 
+	td, 
+	tr { 
+		display: block; 
+	}
+	table.datatable td {
+		border-bottom:none;
+		padding: 5px;
+	}
+	table.datatable tr {
+		border-bottom:solid 1px #ccc;
+	}
+	#back-button {
+		margin-top: 15px;
+	}
+	ul {
+		margin-left:15px;
+	}
+	#footercontainer {
+		padding-left:0; 
+		padding-right:0;
+	}
+	#footer {
+		margin-left:0;
+		margin-right:0; 
+		padding-left:5px;
+		padding-right:5px;
+	}
+	#footer #copyright, 
+	#footer #address {
+		float:none !important;
+	}
+	#footer #address {
+		text-align:left !important; 
+		margin-top:20px;
+		padding-bottom:20px;
+	}
+} /* end max-width: 638px */
+
+@media screen and (max-width:370px) {
+}
+
+@media screen and (max-width:333px) {
+
+} /* end max-width: 333px */
+
