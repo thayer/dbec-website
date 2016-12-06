@@ -379,6 +379,10 @@ img {
   color: #fff;
 }
 
+.tab.hide {
+  display: none;
+}
+
 .tab-box {
   margin-top: 10px;
   margin-bottom: 50px;
